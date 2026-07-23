@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nik Nurul Alya | Expeeiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">N<span class="highlight">A</span></a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="education.html" class="nav-link">Education</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="more.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    </nav>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+      <div class="section-divider"></div>
+
+      <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+        <button class="filter-btn" data-filter="data">Data Analysis</button>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-placeholder"><i class="fas fa-hospital"></i></div>
+            <div class="project-overlay">
+              <span>FYP</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Smart Electronic Health Record System</h3>
+            <p>Integrated Telehealth for Klinik Pakar Lawatan (KPL). Developed a web-based EHR system integrating telehealth features to digitize patient data management and support remote consultations.</p>
+            <div class="project-tags">
+              <span>PHP</span><span>HTML/CSS/JS</span><span>SQL</span><span>Figma</span>
+            </div>
+            <div class="project-tech">
+              <i class="fas fa-code"></i> VS Code, phpMyAdmin (XAMPP)
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-placeholder"><i class="fas fa-graduation-cap"></i></div>
+            <div class="project-overlay"><span>Academic</span></div>
+          </div>
+          <div class="project-info">
+            <h3>EduConnect – Online Learning Platform</h3>
+            <p>A web-based platform for course management, user authentication, and assessments to enhance online learning experience and student engagement.</p>
+            <div class="project-tags">
+              <span>Java</span><span>HTML/CSS</span><span>JSP</span>
+            </div>
+            <div class="project-tech">
+              <i class="fas fa-code"></i> Apache NetBeans, MySQL Workbench
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="app">
+          <div class="project-img">
+            <div class="project-placeholder"><i class="fas fa-location-dot"></i></div>
+            <div class="project-overlay"><span>Academic</span></div>
+          </div>
+          <div class="project-info">
+            <h3>MedicFinder – Hospital & Clinic Locator App</h3>
+            <p>A mobile app to help users locate nearby hospitals and clinics in real time for UiTM Machang students and local residents.</p>
+            <div class="project-tags">
+              <span>Java</span><span>XML</span><span>Firebase</span>
+            </div>
+            <div class="project-tech">
+              <i class="fas fa-code"></i> Android Studio, Firebase, phpMyAdmin
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-placeholder"><i class="fas fa-users"></i></div>
+            <div class="project-overlay"><span>Academic</span></div>
+          </div>
+          <div class="project-info">
+            <h3>Starvengers Tuition System</h3>
+            <p>Developed a web-based enrollment system to replace manual processes, minimizing data redundancy and scheduling errors.</p>
+            <div class="project-tags">
+              <span>PHP</span><span>HTML/CSS</span><span>SQL</span>
+            </div>
+            <div class="project-tech">
+              <i class="fas fa-code"></i> Adobe Dreamweaver, phpMyAdmin
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="data">
+          <div class="project-img">
+            <div class="project-placeholder"><i class="fas fa-chart-bar"></i></div>
+            <div class="project-overlay"><span>Academic</span></div>
+          </div>
+          <div class="project-info">
+            <h3>Car Insurance Cold Calls – Data Analysis</h3>
+            <p>Performed data cleaning, validation, and integration on customer datasets. Analysed demographic and call-related factors influencing car insurance acceptance rates.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Pandas</span><span>Visualization</span>
+            </div>
+            <div class="project-tech">
+              <i class="fas fa-code"></i> Jupyter Notebook
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 Nik Nurul Alya Binti Nik Mat. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:niknurulalya02@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
