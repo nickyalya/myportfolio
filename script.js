@@ -147,3 +147,33 @@ const infoObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 infoItems.forEach(item => infoObserver.observe(item));
+
+// FYP slider behavior
+const sliders = document.querySelectorAll('.fyp-slider');
+const sliderButtons = document.querySelectorAll('.slider-btn');
+const sliderState = {};
+
+sliders.forEach(slider => {
+  const key = slider.dataset.slider;
+  sliderState[key] = 0;
+});
+
+sliderButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const sliderKey = button.dataset.sliderBtn;
+    const direction = button.dataset.direction;
+    const slider = document.querySelector(`.fyp-slider[data-slider="${sliderKey}"]`);
+    const slides = slider.querySelectorAll('.slide');
+    const total = slides.length;
+    let current = sliderState[sliderKey] || 0;
+
+    if (direction === 'next') {
+      current = (current + 1) % total;
+    } else {
+      current = (current - 1 + total) % total;
+    }
+
+    sliderState[sliderKey] = current;
+    slider.style.transform = `translateX(-${current * 100}%);`;
+  });
+});
